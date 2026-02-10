@@ -19,7 +19,7 @@ await connectDB();
 await connectCloudinary();
 
 //Allow mulitple origins
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['http://localhost:5173','https://grocessary-backend.onrender.com']
 
 app.post('/stripe',express.raw({type: 'application/json'}), stripeWebhooks)
 
